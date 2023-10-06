@@ -13,6 +13,20 @@ Mattermost channel name.
 ### `text` (required)
 Text to insert into the message.
 
+### `statuses`
+Add a colored attachment to the message indicating a list of failed and
+succeeded statuses.
+
+```yaml
+statuses: |
+  [
+    {"name": "Build Artifact", "status": "success"},
+    {"name": "Deploy", "status": "failed"},
+    {"name": "Run Report", "status": "skipped"}
+  ]
+
+```
+
 ### `username`
 Mattermost user displayed name
 

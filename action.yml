@@ -10,6 +10,9 @@ inputs:
   text:
     description: 'Custom text to include in the message'
     required: true
+  statuses:
+    description: 'A list of statuses to include in the output'
+    required: false
   username:
     description: 'Mattermost user to send the message as'
     required: true
