@@ -1,0 +1,23 @@
+name: 'Notify Mattermost'
+description: 'Send a mattermost notifaction with build status information'
+inputs:
+  webhook-url:
+    description: 'Mattermost webhook URL'
+    required: true
+  channel:
+    description: 'Mattermost channel to send the message to'
+    required: true
+  text:
+    description: 'Custom text to include in the message'
+    required: true
+  username:
+    description: 'Mattermost user to send the message as'
+    required: true
+    default: 'Bob'
+  icon-url:
+    description: 'Icon to set for mattermost user'
+    required: false
+    default: 'https://icon-library.com/images/2018/10854275_tool-belt-day6-bob-the-builder-hd-png.png'
+runs:
+  using: 'node20'
+  main: 'index.js'
