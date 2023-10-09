@@ -21,7 +21,7 @@ succeeded statuses.
 statuses: |
   [
     {"name": "Build Artifact", "status": "success"},
-    {"name": "Deploy", "status": "failed"},
+    {"name": "Deploy", "status": "failure"},
     {"name": "Run Report", "status": "skipped"}
   ]
 
