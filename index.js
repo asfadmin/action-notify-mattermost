@@ -19,7 +19,7 @@ async function run() {
   let attachments = [];
   if (statuses) {
     statuses = JSON.parse(statuses);
-    const failed = statuses.filter((status) => status.status == 'failed');
+    const failed = statuses.filter((status) => status.status == 'failure');
 
     if (failed?.length) {
       attachments.push({
